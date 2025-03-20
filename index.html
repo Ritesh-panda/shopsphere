@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopSphere - Your Online Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- FontAwesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="container">
+        <div class="logo">ShopSphere</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a id="cart-link" href="#">🛒 Cart</a></li>
+
+              
+
+                <li><a href="#login">👤 Login</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="search-bar" placeholder="Search products..." />
+
+    </div>
+</header>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Welcome to ShopSphere</h1>
+    <p>Discover the best products at unbeatable prices!</p>
+    <button id="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product Sections -->
+<section class="products" id="products">
+    <div class="container">
+        <h2>Explore Our Collections</h2>
+
+        <!-- Lifestyle Section -->
+        <section id="products">
+            <!-- Lifestyle Section -->
+            <h2>Lifestyle</h2>
+            <div class="carousel-container">
+               
+                <div class="carousel-track lifestyle-track">
+                    <!-- 15 Lifestyle Products -->
+                    <div class="product-card">
+                        <img src="smartwatch.jpeg" alt="Smartwatch">
+                        <h3>Smartwatch</h3>
+                        <p>₹1999/-</p>
+                        <button onclick="addToCart('Smartwatch', 1999)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="yoga-mat.jpeg" alt="Yoga Mat">
+                        <h3>Yoga Mat</h3>
+                        <p>₹299/-</p>
+                        <button onclick="addToCart('Yoga Mat', 299)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="earbuds.jpeg" alt="Earbuds">
+                        <h3>Earbuds</h3>
+                        <p>₹999/-</p>
+                        <button onclick="addToCart('Earbuds', 999)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="fitness-band.jpeg" alt="Fitness Band">
+                        <h3>Fitness Band</h3>
+                        <p>₹1499/-</p>
+                        <button onclick="addToCart('Fitness Band', 1499)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="sunglasses.jpeg" alt="Sunglasses">
+                        <h3>Sunglasses</h3>
+                        <p>₹499/-</p>
+                        <button onclick="addToCart('Sunglasses', 499)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="download.jpeg" alt="Cap">
+                        <h3>Cap</h3>
+                        <p>₹199/-</p>
+                        <button onclick="addToCart('Cap', 199)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="scarf.jpeg" alt="Scarf">
+                        <h3>Scarf</h3>
+                        <p>₹299/-</p>
+                        <button onclick="addToCart('Scarf', 299)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="bag.jpeg" alt="Bag">
+                        <h3>Bag</h3>
+                        <p>₹999/-</p>
+                        <button onclick="addToCart('Bag', 999)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="watch.jpeg" alt="Watch">
+                        <h3>Watch</h3>
+                        <p>₹1899/-</p>
+                        <button onclick="addToCart('Watch', 1899)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="running-shoes.jpeg" alt="Running Shoes">
+                        <h3>Running Shoes</h3>
+                        <p>₹2499/-</p>
+                        <button onclick="addToCart('Running Shoes', 2499)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="gloves.jpeg" alt="Gloves">
+                        <h3>Gloves</h3>
+                        <p>₹499/-</p>
+                        <button onclick="addToCart('Gloves', 499)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="necklace.jpeg" alt="Necklace">
+                        <h3>Necklace</h3>
+                        <p>₹799/-</p>
+                        <button onclick="addToCart('Necklace', 799)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="socks.jpeg" alt="Socks">
+                        <h3>Socks</h3>
+                        <p>₹199/-</p>
+                        <button onclick="addToCart('Socks', 199)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="hat.jpeg" alt="Hat">
+                        <h3>Hat</h3>
+                        <p>₹399/-</p>
+                        <button onclick="addToCart('Hat', 399)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="belt.jpeg" alt="Belt">
+                        <h3>Belt</h3>
+                        <p>₹599/-</p>
+                        <button onclick="addToCart('Belt', 599)">Add to Cart</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+            <!-- Dresses Section -->
+            <section id="products">
+            <h2>Dresses</h2>
+            <div class="carousel-container">
+               
+                <div class="carousel-track dresses-track">
+                    <!-- 15 Dresses Products -->
+                    <div class="product-card">
+                        <img src="evening-gown.jpeg" alt="Evening Gown">
+                        <h3>Evening Gown</h3>
+                        <p>₹599/-</p>
+                        <button onclick="addToCart('Evening Gown', 599)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="casual dress.jpeg" alt="Casual Dress">
+                        <h3>Casual Dress</h3>
+                        <p>₹699/-</p>
+                        <button onclick="addToCart('Casual Dress', 699)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="floral-maxi.jpeg" alt="Floral Maxi Dress">
+                        <h3>Floral Maxi Dress</h3>
+                        <p>₹449/-</p>
+                        <button onclick="addToCart('Floral Maxi Dress', 449)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="bodycon-dress.jpeg" alt="Bodycon Dress">
+                        <h3>Bodycon Dress</h3>
+                        <p>₹999/-</p>
+                        <button onclick="addToCart('Bodycon Dress', 999)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="cocktail-dress.jpeg" alt="Cocktail Dress">
+                        <h3>Cocktail Dress</h3>
+                        <p>₹799/-</p>
+                        <button onclick="addToCart('Cocktail Dress', 799)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="summer-dress.jpeg" alt="Summer Dress">
+                        <h3>Summer Dress</h3>
+                        <p>₹699/-</p>
+                        <button onclick="addToCart('Summer Dress', 699)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="maxi-dress.jpeg" alt="Maxi Dress">
+                        <h3>Maxi Dress</h3>
+                        <p>₹499/-</p>
+                        <button onclick="addToCart('Maxi Dress', 499)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="denim dress.jpeg" alt="Denim Dress">
+                        <h3>Denim Dress</h3>
+                        <p>₹1099/-</p>
+                        <button onclick="addToCart('Denim Dress', 1099)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="t-shirt-dress.jpeg" alt="T-Shirt Dress">
+                        <h3>T-Shirt Dress</h3>
+                        <p>₹399/-</p>
+                        <button onclick="addToCart('T-Shirt Dress', 399)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="knitted-dress.jpeg" alt="Knitted Dress">
+                        <h3>Knitted Dress</h3>
+                        <p>₹999/-</p>
+                        <button onclick="addToCart('Knitted Dress', 999)">Add to Cart</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+
+        <!-- Electronics Section -->
+        <section id="products">
+            <h2>Electronics</h2>
+            <div class="carousel-container">
+               
+                <div class="carousel-track electronics-track">
+                    <!-- 15 Electronics Products -->
+                    <div class="product-card">
+                        <img src="smartphone.jpeg" alt="Smartphone">
+                        <h3>Smartphone</h3>
+                        <p>₹6999/-</p>
+                        <button onclick="addToCart('Smartphone', 6999)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="earbuds.jpeg" alt="Earbuds">
+                        <h3>Earbuds</h3>
+                        <p>₹999/-</p>
+                        <button onclick="addToCart('Earbuds', 999)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="bluetooth-speaker.jpeg" alt="Bluetooth Speaker">
+                        <h3>Bluetooth Speaker</h3>
+                        <p>₹9999/-</p>
+                        <button onclick="addToCart('Bluetooth Speaker', 9999)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="gaming-headset.jpeg" alt="Gaming Headset">
+                        <h3>Gaming Headset</h3>
+                        <p>₹4999/-</p>
+                        <button onclick="addToCart('Gaming Headset', 4999)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="laptop.jpeg" alt="Laptop">
+                        <h3>Laptop</h3>
+                        <p>₹49999/-</p>
+                        <button onclick="addToCart('Laptop', 49999)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="charger.jpeg" alt="Charger">
+                        <h3>Charger</h3>
+                        <p>₹499/-</p>
+                        <button onclick="addToCart('Charger', 499)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="tablet.jpeg" alt="Tablet">
+                        <h3>Tablet</h3>
+                        <p>₹14999/-</p>
+                        <button onclick="addToCart('Tablet', 14999)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="wireless-mouse.jpeg" alt="Wireless Mouse">
+                        <h3>Wireless Mouse</h3>
+                        <p>₹999/-</p>
+                        <button onclick="addToCart('Wireless Mouse', 999)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="keyboard.jpeg" alt="Keyboard">
+                        <h3>Keyboard</h3>
+                        <p>₹1999/-</p>
+                        <button onclick="addToCart('Keyboard', 1999)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="smart-tv.jpeg" alt="Smart TV">
+                        <h3>Smart TV</h3>
+                        <p>₹34999/-</p>
+                        <button onclick="addToCart('Smart TV', 34999)">Add to Cart</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+    </div>
+</section>
+
+<!-- Shopping Cart Section -->
+<div class="cart-overlay" id="cart-overlay">
+    <div class="cart">
+        <h2>Your Cart</h2>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be added dynamically here -->
+        </div>
+        <div class="cart-total">
+            <p>Total: $<span id="cart-total">0.00</span></p>
+        </div>
+        <!-- Place Order Button -->
+        <button id="place-order-btn" onclick="placeOrder()">Place Order</button>
+        <button id="close-cart">Close Cart</button>
+    </div>
+</div>
+
+<!-- Login/Signup Section -->
+<div class="login-overlay" id="login-overlay">
+    <div class="login-form">
+        <div class="tabs">
+            <button id="login-tab" class="active" onclick="showLogin()">Login</button>
+            <button id="signup-tab" onclick="showSignup()">Signup</button>
+        </div>
+
+        <!-- Login Form -->
+        <form id="login-form">
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <button type="submit">Login</button>
+            <p>Don't have an account? <span onclick="showSignup()">Sign up</span></p>
+        </form>
+
+        <!-- Signup Form -->
+        <form id="signup-form" style="display: none;">
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <button type="submit">Signup</button>
+            <p>Already have an account? <span onclick="showLogin()">Login</span></p>
+        </form>
+
+        <button id="close-login">Close</button>
+    </div>
+</div>
+<!-- Contact Form Section -->
+<section class="contact" id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="form-status"></p>
+    </div>
+</section>
+<!-- About/Blog Section -->
+<section class="about" id="blog">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Welcome to <strong>ShopSphere</strong>, the ultimate e-commerce platform designed for businesses of all sizes.</p>
+        
+        <h3>Our Vision</h3>
+        <p>We empower businesses with AI-driven automation and seamless integration for e-commerce success.</p>
+        
+        <h3>Key Features</h3>
+        <ul>
+            <li>Easy drag-and-drop website builder</li>
+            <li>AI-powered product recommendations</li>
+            <li>Real-time inventory and order management</li>
+            <li>Multi-channel selling on platforms like Amazon & eBay</li>
+            <li>Secure and flexible payment options</li>
+            <li>Built-in marketing and SEO tools</li>
+            <li>AI-powered customer support</li>
+            <li>Subscription and membership features</li>
+            <li>Advanced analytics and business insights</li>
+        </ul>
+
+        <h3>Target Audience</h3>
+        <p>Small and medium businesses, large enterprises, dropshipping businesses, entrepreneurs, and startups.</p>
+
+        <h3>Revenue Model</h3>
+        <ul>
+            <li>Subscription plans with scalable features</li>
+            <li>Optional transaction fees</li>
+            <li>Premium add-ons for extended functionality</li>
+            <li>Marketing & SEO service offerings</li>
+        </ul>
+
+        <h3>Why Choose ShopSphere?</h3>
+        <p>With AI-driven automation, seamless integrations, and robust security, ShopSphere is built for e-commerce success.</p>
+    </div>
+</section>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Company Info -->
+            <div class="footer-section">
+                <h3>ShopSphere</h3>
+                <p>Your one-stop solution for e-commerce success.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#blog">About</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ShopSphere. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
